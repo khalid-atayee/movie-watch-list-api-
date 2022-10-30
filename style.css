@@ -1,0 +1,135 @@
+:root{
+    --m-size:2em;
+   
+    --width:600px;
+    --head-height:208px;
+    --height:700px;
+    --full-width:100%;
+    --white-color:#ffffff;
+    --black-color:#000;
+    --fs-title:18px;
+
+
+}
+
+body{
+    max-width: var(--width);
+    min-height: var(--height);
+    border: 2px dotted red;
+    margin: 0 auto;
+    color: var(--white-color);
+}
+
+
+header{
+    background-image: url('godFather.png');
+    display: flex;
+    justify-content: space-between;
+    height: var(--head-height);
+    background-color: rgba(0, 0, 0, .95);
+    align-items: center;
+    font-weight: bold;
+
+}
+header>h1,a{
+    margin-left: var(--m-size);
+    margin-right: var(--m-size); 
+}
+header>a{
+    color: var(--white-color) !important;
+    text-decoration: none;
+}
+.search-container{
+    display: flex !important;
+    flex-direction: row;
+    margin-left: var(--m-size);
+    margin-right: var(--m-size);
+    margin-top: -1.5em;
+    
+    position: relative;
+}
+
+#search-input{
+    position: relative;
+    padding: 1em;
+    padding-left: 7.8%;
+    width:var(--full-width);
+    border: none;
+    outline: none;
+    border:1px solid #D1D5DB;
+    border-radius: 3px;
+
+}
+#search-icon{
+    position: absolute;
+    top: 30%;
+    left: 3%; 
+    color: #000;
+
+}
+.btn{
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    width: 20%;
+    border:1px solid gray/300;
+    border: none;
+    cursor: pointer;
+}
+
+
+.movie-container{
+    color: var(--black-color);
+    margin: var(--m-size);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: start;
+    align-items: center;
+
+    
+}
+.movie-container img{
+    max-width: 100px;
+    width: 100%;
+}
+
+
+p{
+    margin: .5em;
+}
+
+.movie-title{
+    display: flex;
+    margin: 0%;
+    align-items: center;
+    justify-content: space-between;
+}
+.movie-title:nth-child(1){
+    font-size: var(--fs-title);
+    font-weight: bold;
+}
+.star{
+    font-weight: normal;
+    font-size: .8rem;
+
+}
+.star i{
+    color:#FEC654 ;
+}
+
+
+.movie-details{
+    display: flex;
+    margin: 0%;
+    justify-content: space-between;
+}
+.movie-description{
+    color: #6B7280;
+}
+.genre{
+    font-size: 13px;
+}
+.addCart{
+    cursor: pointer;
+    
+}
