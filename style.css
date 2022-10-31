@@ -38,6 +38,7 @@ header>h1,a{
 header>a{
     color: var(--white-color) !important;
     text-decoration: none;
+    cursor: pointer;
 }
 .search-container{
     display: flex !important;
