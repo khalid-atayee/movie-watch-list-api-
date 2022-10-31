@@ -28,9 +28,7 @@ submitForm.addEventListener('submit', (e)=>{
 })
 
 function renderSearch(movie){
-    // let data = movie;
-   
-    // console.log(data)
+
     searchContainer.innerHTML += `<img src="${movie.Poster}" alt="">
     <div class="movie">
         <div class="movie-title">
@@ -57,11 +55,7 @@ function setToLocalStorage(data){
     let validJSON = JSON.parse(localStorage.getItem("movies") || "[]");
     validJSON.push(data)
     localStorage.setItem('movies',JSON.stringify(validJSON))
-    // console.log(validJSON)
-    // validJSON.map((data)=>{
-    //     renderWatchlist(data)
-    // })
- 
+
 
 }
 

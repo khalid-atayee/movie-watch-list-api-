@@ -9,7 +9,6 @@ function bringData(){
 
 
 function render() {
-    // ${JSON.stringify(movie).replace(/"/g,'\&quot;')}
     let datas = JSON.parse(localStorage.getItem('movies'))
     datas.map((movie) => {
         watchlistContainer.innerHTML += `<img src="${movie.Poster}" alt="">
